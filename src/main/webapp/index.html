@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <link rel="stylesheet" href="assets/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://mczak.com/code/clock/css/mcclock.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="https://mczak.com/code/clock/js/mcclock.js"></script>
+</head>
+
+<body class="homePageBody">
+    <div w3-include-html="NavBar.html"></div>
+    <div class="container-fluid">
+        
+            <h3 id="title">WELCOME TO LIBRARY APP</h3>
+     
+        <br>
+
+
+        <p class="fst-italic" style="text-align: center">
+            Books don't have
+            <span style="color:rgb(0, 0, 204)">
+                <strong>religion</strong>
+            </span>,
+            <br> It is a religion
+        </p>
+        <br>
+        <br>
+        <br>
+
+        <div id="timer" class="wrapper">
+            <div class="clock" style="margin: 2em; align-content: center"></div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    w3IncludeHTML();
+</script>
+<script>
+    var clock;
+    $(document).ready(function () {
+        clock = $('.clock').FlipClock({
+            clockFace: 'TwelveHourClock'
+        });
+    });
+</script>
+
+</html>

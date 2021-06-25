@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="service/SecurityService.js"></script>
+
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/sidebar.css">
+
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+</head>
+
+<body>
+
+
+    <div class='container-fluid'>
+
+        <div class='dashboard'>
+            <div class="dashboard-nav">
+                <header>
+                    <a href="#!" class="menu-toggle">
+                        <em class="fas fa-bars"></em>
+                    </a>
+                    <a href="#" class="brand-logo">
+                        <em class="fas fa-anchor"></em>
+                        <span>HI BUDDY </span>
+                    </a>
+                </header>
+                <nav class="dashboard-nav-list">
+                    <a href="TakeBook.html" class="dashboard-nav-item ">
+                        <em class="fas fa-home"></em>
+                        Take Book </a>
+                    <a href="ReturnBook.html" class="dashboard-nav-item ">
+                        <em class="fas fa-tachometer-alt"></em> Return Book </a>
+
+
+
+
+                   
+                    <a href="DebtList.html" class="dashboard-nav-item active">
+                        <em class="fas fa-user "></em> debts </a>
+                    <div class="nav-item-divider"></div>
+                    <a onclick="Security.logOut()" href="javascript:void(0);" class="dashboard-nav-item">
+                        <em class="fas fa-sign-out-alt"></em> Logout </a>
+                </nav>
+            </div>
+            <div class='dashboard-app'>
+                <header class='dashboard-toolbar'>
+                    <a href="#!" class="menu-toggle">
+                        <em class="fas fa-bars"></em>
+                    </a>
+                </header>
+                <div class='dashboard-content'>
+                    <div class='container'>
+                        <div class='card'>
+                            <div class='card-header'>
+                                <h1>Books taken by you</h1>
+                            </div>
+                            <div class='card-body'>
+
+
+
+                                <table class="table table-dark" style="width: 100%">
+                                    <caption>Books Taken by you</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">S.no</th>
+                                            <th scope="col">BOOK NAME</th>
+                                            <th scope="col">QUANTITY</th>
+                                            <th scope="col">TAKEN DATE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="book_tbl">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="service/service.js">
+</script>
+<script>
+	Security.isLoggedIn();
+    Service.viewDebtBooks();
+</script>
+
+</html>

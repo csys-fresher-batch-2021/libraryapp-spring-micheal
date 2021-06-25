@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+
+#searchbooks {
+	text-align: center;
+	background-color: rgba(175, 232, 182, 0.3);
+	margin-right: 30%;
+	margin-left: 30%;
+	margin-top: 3%;
+	border-radius: 30px;
+	padding: 10px;
+	border-radius: 30px;
+	padding: 10px;
+	border: 5px solid grey;
+}
+#title,#loginHeader,#loginHeader{
+	text-align:center;
+}
+
+.searchBooksBody {
+	background-image: linear-gradient(to right, #93a5cf, #e4efe9);
+}
+
+#searchTable {
+	padding: 3%;
+}
+
+input {
+	border-radius: 10px;
+}
+
+.toast-error {
+	background-color: #BD362F !important;
+}
+
+.homePageBody {
+	background-image: linear-gradient(to right, #f3f5f8, #ced4da, #a9b4bd, #8596a0, #617983);
+}
+
+p {
+	font-size: 20px;
+}
+
+#timer {
+	width: 550px;
+	margin: auto;
+}
+
+.userLogin {
+	margin: auto;
+	text-align: center;
+	width: 40%;
+	text-align: center;
+}
+
+#loginHeader {
+	color: blue;
+}
+
+.userLogin {
+	margin-top: 5%;
+	border: 5px solid blue;
+	border-radius: 10px;
+	background-image: linear-gradient(to left, #eeeff0, #bed5f3, #97b8f5, #7c99f3, #7176eb);
+	border: 5px solid blue;
+}
+
+#loginForm {
+	padding: 40px;
+}
+
+.userLoginBody {
+	margin:auto;
+	background-image: linear-gradient(to bottom, #311b71, #5f5096, #8f87ba, #c3c1dc, #fcfcfd);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#TakeBookForm{
+	text-align:center;
+	margin:auto;
+	width:400px;
+}
